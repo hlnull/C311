@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="http://cgi.soic.indiana.edu/~c311/doku.php?id=assignment-6"><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><div id="google-cache-hdr"  dir=ltr><div>This is Google&#39;s cache of <a href="http://cgi.soic.indiana.edu/~c311/doku.php?id=assignment-6" dir="ltr">http://cgi.soic.indiana.edu/~c311/doku.php?id=assignment-6</a>. It is a snapshot of the page as it appeared on Jan 13, 2016 18:09:25 GMT. </div><div>The <a href="http://cgi.soic.indiana.edu/~c311/doku.php?id=assignment-6" dir="ltr">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222">Learn more</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">Full version</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:JRn5HnugPAYJ:cgi.soic.indiana.edu/~c311/doku.php%3Fid%3Dassignment-6&amp;num=1&amp;client=safari&amp;hl=en&amp;gl=us&strip=1&vwsrc=0">Text-only version</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:JRn5HnugPAYJ:cgi.soic.indiana.edu/~c311/doku.php%3Fid%3Dassignment-6&amp;num=1&amp;client=safari&amp;hl=en&amp;gl=us&strip=0&vwsrc=1">View source</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.</span></div></div><div style="position:relative;">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta name="google-site-verification" content="CHpL8-yKEGFx7Gy37uNcU2lz9oRZydQdifkiJNj6-P4" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    C311/B521/A596 Programming Languages    [Assignment 6: Continuation-Passing Style]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2015-10-25T17:41:57-0400" />
+<meta name="keywords" content="assignment-6" />
+<link rel="search" type="application/opensearchdescription+xml" href="/~c311/lib/exe/opensearch.php" title="C311/B521/A596 Programming Languages" />
+<link rel="start" href="/~c311/" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/~c311/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/~c311/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/~c311/doku.php?do=export_xhtml&amp;id=assignment-6" />
+<link rel="stylesheet" media="all" type="text/css" href="/~c311/lib/exe/css.php?s=all&amp;t=doogiestpl" />
+<link rel="stylesheet" media="screen" type="text/css" href="/~c311/lib/exe/css.php?t=doogiestpl" />
+<link rel="stylesheet" media="print" type="text/css" href="/~c311/lib/exe/css.php?s=print&amp;t=doogiestpl" />
+<script type="text/javascript" charset="utf-8" src="/~c311/lib/exe/js.php?edit=0&amp;write=0" ></script>
+
+  <link rel="shortcut icon" href="/~c311/lib/tpl/doogiestpl/images/favicon.ico" />
+
+  </head>
+
+
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="header_left"></div>
+      <div class="logo">
+        <a href="/~c311/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C311/B521/A596 Programming Languages</a>      </div>
+
+      <div id="tabnavi" class="tabnavi">
+	    <ul>
+<li><a href="/~c311/doku.php?id=home" >Home</a></li>
+<li><a href="/~c311/doku.php?id=course-policies" >Policies</a></li>
+<li><a href="/~c311/doku.php?id=instructors" >Instructors</a></li>
+<li><a href="/~c311/doku.php?id=resources" >Resources</a></li>
+<li><a href="/~c311/doku.php?id=schedule" >Schedule</a></li>
+<li><a href="/~c311/doku.php?id=assignments" >Assignments</a></li>
+<li><a href="/~c311/doku.php?id=b621" >B621</a></li>
+</ul>
+	  </div>
+	  
+	  <div class="clearer"></div>
+      	</div>  
+  </div>
+    
+  
+   <div style="float: right;">
+            <form class="button btn_login" method="get" action="/~c311/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="b6f78ac51bb93d969e6b38d0e3e4828e" /><input type="hidden" name="id" value="assignment-6" /><input type="submit" value="Login" class="button" title="Login" /></div></form>       &nbsp;  &nbsp;  &nbsp;
+   </div>
+  <div class="clearer">&nbsp;</div>
+
+
+  <div class="page">
+    <!-- ......... wikipage start ......... -->
+    
+
+
+<h1><a name="assignment-6continuation-passing-style" id="assignment-6continuation-passing-style">Assignment 6: Continuation-Passing Style</a></h1>
+<div class="level1">
+
+<blockquote cite="Luke Palmer" class="blockquote-plugin">
+<p>
+Say you&#039;re in the kitchen in front of the refrigerator, thinking about a sandwich. You take a continuation right there and stick it in your pocket. Then you get some turkey and bread out of the refrigerator and make yourself a sandwich, which is now sitting on the counter. You invoke the continuation in your pocket, and you find yourself standing in front of the refrigerator again, thinking about a sandwich. But fortunately, there&#039;s a sandwich on the counter, and all the materials used to make it are gone. So you eat it.
+
+</p>
+
+</blockquote>
+
+</div>
+
+<h2><a name="note" id="note">Note</a></h2>
+<div class="level2">
+
+<p>
+
+In addition to your notes from class, you may find the following resources helpful as you work through this assignment
+
+</p>
+<ul>
+<li class="level1"><div class="li"> A <a href="/~c311/doku.php?id=cps-refresher" class="wikilink1" title="cps-refresher">CPS Refresher</a> on converting procedures to continuation-passing style.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/~c311/lib/exe/fetch.php?media=cps-notes.scm" class="media mediafile mf_scm" title="cps-notes.scm">Notes</a> from the Feb 16, 2010 lecture on continuation-passing style.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/~c311/lib/exe/fetch.php?media=cpslecture.scm" class="media mediafile mf_scm" title="cpslecture.scm"> Notes</a> from a previous AI on converting procedures to CPS.</div>
+</li>
+</ul>
+
+<p>
+<!---  * {{:product3ways.scm|Notes}} on versions of the &#039;&#039;product&#039;&#039; procedure written three ways: in accumulator-passing style, in continuation-passing
+style, and in direct style using &#039;&#039;call/cc&#039;&#039;.
+--->
+</p>
+
+</div>
+
+<h2><a name="assignment" id="assignment">Assignment</a></h2>
+<div class="level2">
+
+<p>
+
+For this assignment, you will convert several short programs to continuation-passing style.  Please observe the following guidelines:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> When CPSing, you may treat built-in procedures such as <code>null?</code>, <code>add1</code>, <code>assv</code>, <code>car</code>, <code>&lt;</code>, and the like as “simple”.</div>
+</li>
+<li class="level1"><div class="li"> Test your CPSed procedures using the initial continuation returned from <code>empty-k</code>.</div>
+</li>
+<li class="level1"><div class="li"> We don&#039;t provide a test suite for these problems; providing invocations of these expressions can spoil the fun! You should modify the calls provided in this assignment to be invocations of your CPSed implementations.</div>
+</li>
+</ul>
+<pre class="code lisp"><span class="br0">&#40;</span>define empty<span class="sy0">-</span>k
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span><span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">let</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>once<span class="sy0">-</span>only #f<span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>v<span class="br0">&#41;</span>
+        <span class="br0">&#40;</span><span class="kw1">if</span> once<span class="sy0">-</span>only
+	    <span class="br0">&#40;</span><span class="kw1">error</span> 'empty<span class="sy0">-</span>k <span class="st0">&quot;You can only invoke the empty continuation once&quot;</span><span class="br0">&#41;</span>
+	    <span class="br0">&#40;</span>begin <span class="br0">&#40;</span><span class="kw1">set</span><span class="sy0">!</span> once<span class="sy0">-</span>only #t<span class="br0">&#41;</span> v<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+You may have seen <code>empty-k</code> defined as the following.
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define empty<span class="sy0">-</span>k
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span><span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>v<span class="br0">&#41;</span> v<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+However, the one above is much better, in that it will help you better detect if you have made a mistake in CPSing.
+</p>
+
+<p>
+
+1. Define and test a procedure <code>binary-to-decimal-cps</code> that is a CPSed version of the following <code>binary-to-decimal</code> procedure:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define binary<span class="sy0">-</span>to<span class="sy0">-</span>decimal
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>n<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">cond</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span><span class="kw1">null</span>? n<span class="br0">&#41;</span> 0<span class="br0">&#93;</span>
+      <span class="br0">&#91;</span>else <span class="br0">&#40;</span><span class="sy0">+</span> <span class="br0">&#40;</span><span class="kw1">car</span> n<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="sy0">*</span> <span class="nu0">2</span> <span class="br0">&#40;</span>binary<span class="sy0">-</span>to<span class="sy0">-</span>decimal <span class="br0">&#40;</span><span class="kw1">cdr</span> n<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+<code>binary-to-decimal</code> uses little-endian binary numbers; you should consider binary sequences with one or more trailing <code>0</code>s to be ill-formed binary numbers (bad data). Here are a few sample calls to make the meaning clear.
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>binary<span class="sy0">-</span>to<span class="sy0">-</span>decimal '<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+0
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>binary<span class="sy0">-</span>to<span class="sy0">-</span>decimal '<span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="nu0">1</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>binary<span class="sy0">-</span>to<span class="sy0">-</span>decimal '<span class="br0">&#40;</span>0 <span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="nu0">2</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>binary<span class="sy0">-</span>to<span class="sy0">-</span>decimal '<span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">1</span> 0 <span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="nu0">11</span></pre>
+<p>
+2. Define and test a procedure <code>times-cps</code> that is a CPSed version of the following <code>times</code> procedure.
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define times
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>ls<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">cond</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span><span class="kw1">null</span>? ls<span class="br0">&#41;</span> <span class="nu0">1</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span>zero? <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span> 0<span class="br0">&#93;</span>
+      <span class="br0">&#91;</span>else <span class="br0">&#40;</span><span class="sy0">*</span> <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span> <span class="br0">&#40;</span>times <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+Here are some examples of calls to <code>times</code>:
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>times '<span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="nu0">120</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>times '<span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> 0 <span class="nu0">3</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+0</pre>
+<p>
+3. Define a modified version of your <code>times-cps</code> above, called <code>times-cps-shortcut</code> that doesn&#039;t apply <code>k</code> in the zero case. Instead, maintain the behavior of the <code>zero?</code> case in <code>times</code> - simply returning the 0 and not performing further computation. While this certainly violates the standard rules of CPSing the program, it provides an interesting look at optimizations CPSing allows us.
+</p>
+
+<p>
+4. Define and test a procedure <code>plus-cps</code> that is a CPSed version of the following <code>plus</code> procedure:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define plus
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>m<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>n<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="sy0">+</span> m n<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+Here are some examples of calls to <code>plus</code>:
+
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>plus <span class="nu0">2</span><span class="br0">&#41;</span> <span class="nu0">3</span><span class="br0">&#41;</span>
+<span class="nu0">5</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>plus <span class="br0">&#40;</span><span class="br0">&#40;</span>plus <span class="nu0">2</span><span class="br0">&#41;</span> <span class="nu0">3</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="nu0">5</span><span class="br0">&#41;</span>
+<span class="nu0">10</span></pre>
+<p>
+5. Define and test a procedure <code>remv-first-9*-cps</code> that is a CPSed version of the following <code>remv-first-9*</code> procedure, which removes the first <code>9</code> in a preorder walk of the arbitrarily nested list <code>ls</code>:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span>
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>ls<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">cond</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span><span class="kw1">null</span>? ls<span class="br0">&#41;</span> '<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span>pair? <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span>
+       <span class="br0">&#40;</span><span class="kw1">cond</span>
+         <span class="br0">&#91;</span><span class="br0">&#40;</span><span class="kw1">equal</span>? <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+          <span class="br0">&#40;</span><span class="kw1">cons</span> <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span>
+         <span class="br0">&#91;</span>else <span class="br0">&#40;</span><span class="kw1">cons</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span>eqv? <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span> '<span class="nu0">9</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span>else <span class="br0">&#40;</span><span class="kw1">cons</span> <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+Here are some example calls to <code>remv-first-9*</code>:
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> '<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> '<span class="br0">&#40;</span><span class="nu0">9</span> <span class="br0">&#40;</span><span class="nu0">9</span> <span class="br0">&#40;</span><span class="nu0">9</span> <span class="br0">&#40;</span><span class="nu0">9</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">9</span> <span class="br0">&#40;</span><span class="nu0">9</span> <span class="br0">&#40;</span><span class="nu0">9</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>remv<span class="sy0">-</span>first<span class="sy0">-</span><span class="nu0">9</span><span class="sy0">*</span> '<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span></pre>
+<p>
+6. Define and test a procedure <code>cons-cell-count-cps</code> that is a CPSed version of the following <code>cons-cell-count</code> procedure:
+</p>
+<pre class="code lisp">&nbsp;
+<span class="br0">&#40;</span>define cons<span class="sy0">-</span>cell<span class="sy0">-</span>count
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>ls<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">cond</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span>pair? ls<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span>add1 <span class="br0">&#40;</span><span class="sy0">+</span> <span class="br0">&#40;</span>cons<span class="sy0">-</span>cell<span class="sy0">-</span>count <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>cons<span class="sy0">-</span>cell<span class="sy0">-</span>count <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span>else 0<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+7. Define and test a procedure <code>find-cps</code> that is a CPSed version of the following <code>find</code> procedure:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define find 
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>u s<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">let</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>pr <span class="br0">&#40;</span>assv u s<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="kw1">if</span> pr <span class="br0">&#40;</span>find <span class="br0">&#40;</span><span class="kw1">cdr</span> pr<span class="br0">&#41;</span> s<span class="br0">&#41;</span> u<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+
+Here are some sample calls to <code>find</code>:
+
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>find <span class="nu0">5</span> '<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">5</span> . a<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">6</span> . b<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">7</span> . c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+a
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>find <span class="nu0">7</span> '<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">5</span> . a<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">6</span> . <span class="nu0">5</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">7</span> . <span class="nu0">6</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+a
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>find <span class="nu0">5</span> '<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">5</span> . <span class="nu0">6</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">9</span> . <span class="nu0">6</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">2</span> . <span class="nu0">9</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="nu0">6</span></pre>
+<p>
+8. Define and test a procedure <code>ack-cps</code> that is a CPSed version of the following <code>ack</code> procedure:
+</p>
+<pre class="code lisp"><span class="co1">;; ack: computes the Ackermann function</span>
+<span class="co1">;; (http://en.wikipedia.org/wiki/Ackermann_function).  Warning: if you</span>
+<span class="co1">;; run this program with m &gt;= 4 and n &gt;= 2, you'll be in for a long</span>
+<span class="co1">;; wait.</span>
+<span class="br0">&#40;</span>define ack
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>m n<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">cond</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span>zero? m<span class="br0">&#41;</span> <span class="br0">&#40;</span>add1 n<span class="br0">&#41;</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span><span class="br0">&#40;</span>zero? n<span class="br0">&#41;</span> <span class="br0">&#40;</span>ack <span class="br0">&#40;</span>sub1 m<span class="br0">&#41;</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#93;</span>
+      <span class="br0">&#91;</span>else <span class="br0">&#40;</span>ack <span class="br0">&#40;</span>sub1 m<span class="br0">&#41;</span>
+                 <span class="br0">&#40;</span>ack m <span class="br0">&#40;</span>sub1 n<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+9. Define and test a procedure <code>fib-cps</code> that is a CPSed version of the following <code>fib</code> procedure:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define fib
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>n<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>fib<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span>fib fib n<span class="br0">&#41;</span><span class="br0">&#41;</span>
+     <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>fib n<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span><span class="kw1">cond</span>
+	 <span class="br0">&#91;</span><span class="br0">&#40;</span>zero? n<span class="br0">&#41;</span> 0<span class="br0">&#93;</span>
+	 <span class="br0">&#91;</span><span class="br0">&#40;</span><span class="sy0">=</span> <span class="nu0">1</span> n<span class="br0">&#41;</span> <span class="nu0">1</span><span class="br0">&#93;</span>
+	 <span class="br0">&#91;</span>else <span class="br0">&#40;</span><span class="sy0">+</span> <span class="br0">&#40;</span>fib fib <span class="br0">&#40;</span>sub1 n<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>fib fib <span class="br0">&#40;</span>sub1 <span class="br0">&#40;</span>sub1 n<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+10. Define and test a procedure <code>unfold-cps</code> that is a CPSed version of the following <code>unfold</code> procedure:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define unfold
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>p f g seed<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>h<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span><span class="br0">&#40;</span>h h<span class="br0">&#41;</span> seed '<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+     <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>h<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>seed ans<span class="br0">&#41;</span>
+	 <span class="br0">&#40;</span><span class="kw1">if</span> <span class="br0">&#40;</span>p seed<span class="br0">&#41;</span>
+	     ans
+	     <span class="br0">&#40;</span><span class="br0">&#40;</span>h h<span class="br0">&#41;</span> <span class="br0">&#40;</span>g seed<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw1">cons</span> <span class="br0">&#40;</span>f seed<span class="br0">&#41;</span> ans<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+An example of its use is demonstrated below:
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>unfold <span class="kw1">null</span>? <span class="kw1">car</span> <span class="kw1">cdr</span> '<span class="br0">&#40;</span>a b c d e<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span>e d c b a<span class="br0">&#41;</span></pre>
+<p>
+When testing your <code>unfold-cps</code>, you should consider its arguments to be serious, so include the following helper definitions when testing your code.
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>define <span class="kw1">null</span>?<span class="sy0">-</span>cps
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>ls k<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span>k <span class="br0">&#40;</span><span class="kw1">null</span>? ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>define car<span class="sy0">-</span>cps
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>pr k<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span>k <span class="br0">&#40;</span><span class="kw1">car</span> pr<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>define cdr<span class="sy0">-</span>cps
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>pr k<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span>k <span class="br0">&#40;</span><span class="kw1">cdr</span> pr<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unfold<span class="sy0">-</span>cps <span class="kw1">null</span>?<span class="sy0">-</span>cps car<span class="sy0">-</span>cps cdr<span class="sy0">-</span>cps '<span class="br0">&#40;</span>a b c d e<span class="br0">&#41;</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>k<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span>e d c b a<span class="br0">&#41;</span></pre>
+<p>
+<!---
+11. Define and test a procedure &#039;&#039;pascal-cps&#039;&#039; that is a CPSed version of the following &#039;&#039;pascal&#039;&#039; procedure:
+
+&lt;code lisp&gt;
+(define pascal
+  (lambda (n)
+    (let ((pascal
+           (lambda (pascal)
+             (lambda (m a)
+               (cond
+                 [(&gt; m n) &#039;()]
+                 [else (let ((a (+ a m)))
+                         (cons a ((pascal pascal) (add1 m) a)))])))))
+      ((pascal pascal) 1 0))))
+&lt;/code&gt;
+--->
+</p>
+
+<p>
+11. Here is the definition of <code>unify</code> with its helpers. It implements first-order, syntactic unification. The current version uses the version of <code>find</code> given in question 8. Define and test a procedure <code>unify-cps</code> that uses your <code>find-cps</code> from question 8.
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define empty<span class="sy0">-</span>s
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span><span class="br0">&#41;</span>
+    '<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+&nbsp;
+<span class="br0">&#40;</span>define unify
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>u v s<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">cond</span>
+      <span class="br0">&#40;</span><span class="br0">&#40;</span>eqv? u v<span class="br0">&#41;</span> s<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="br0">&#40;</span>number? u<span class="br0">&#41;</span> `<span class="br0">&#40;</span><span class="br0">&#40;</span>,u . ,v<span class="br0">&#41;</span> . ,s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="br0">&#40;</span>number? v<span class="br0">&#41;</span> <span class="br0">&#40;</span>unify v u s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="br0">&#40;</span>pair? u<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span><span class="kw1">if</span> <span class="br0">&#40;</span>pair? v<span class="br0">&#41;</span>
+	   <span class="br0">&#40;</span><span class="kw1">let</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>s <span class="br0">&#40;</span>unify <span class="br0">&#40;</span>find <span class="br0">&#40;</span><span class="kw1">car</span> u<span class="br0">&#41;</span> s<span class="br0">&#41;</span> <span class="br0">&#40;</span>find <span class="br0">&#40;</span><span class="kw1">car</span> v<span class="br0">&#41;</span> s<span class="br0">&#41;</span> s<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+             <span class="br0">&#40;</span><span class="kw1">if</span> s <span class="br0">&#40;</span>unify <span class="br0">&#40;</span>find <span class="br0">&#40;</span><span class="kw1">cdr</span> u<span class="br0">&#41;</span> s<span class="br0">&#41;</span> <span class="br0">&#40;</span>find <span class="br0">&#40;</span><span class="kw1">cdr</span> v<span class="br0">&#41;</span> s<span class="br0">&#41;</span> s<span class="br0">&#41;</span> #f<span class="br0">&#41;</span><span class="br0">&#41;</span>
+	   #f<span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="br0">&#40;</span>else #f<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+Here are some example calls to <code>unify</code>:
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify 'x <span class="nu0">5</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">5</span> . x<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify 'x <span class="nu0">5</span> <span class="br0">&#40;</span>unify 'y <span class="nu0">6</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">5</span> . x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">6</span> . y<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify '<span class="br0">&#40;</span>x y<span class="br0">&#41;</span> '<span class="br0">&#40;</span><span class="nu0">5</span> <span class="nu0">6</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">6</span> . y<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">5</span> . x<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify 'x <span class="nu0">5</span> <span class="br0">&#40;</span>unify 'x <span class="nu0">6</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">5</span> . x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">6</span> . x<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify '<span class="br0">&#40;</span>x x<span class="br0">&#41;</span> '<span class="br0">&#40;</span><span class="nu0">5</span> <span class="nu0">6</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">6</span> . x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">5</span> . x<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify '<span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span><span class="br0">&#41;</span> '<span class="br0">&#40;</span>x <span class="nu0">1</span> <span class="nu0">2</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="nu0">3</span> . x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">2</span> . x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="nu0">1</span> . x<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span>unify 'x 'y <span class="br0">&#40;</span>empty<span class="sy0">-</span>s<span class="br0">&#41;</span><span class="br0">&#41;</span>
+#f</pre>
+<p>
+As you can tell from the recursive call, we would normally invoke unify only after using <code>find</code> on the first two arguments. Thees tests have been specially chosen to avoid a need to do that. 
+</p>
+
+<p>
+12. Define and test a procedure <code>M-cps</code> that is a CPSed version of <code>M</code>, which is a curried version of <code>map</code>. Assume for the CPSed version that any <code>f</code> passed in will also be CPSed.
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define M
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>f<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>ls<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="kw1">cond</span>
+        <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw1">null</span>? ls<span class="br0">&#41;</span> '<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#40;</span>else <span class="br0">&#40;</span><span class="kw1">cons</span> <span class="br0">&#40;</span>f <span class="br0">&#40;</span><span class="kw1">car</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>M f<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+13. Consider the corresponding call to <code>M</code>, called <code>use-of-M</code>. Using your CPSed <code>M-cps</code>, re-write <code>use-of-M</code> to call <code>M-cps</code>, and make all the appropriate changes (including CPSing the argument). Name it <code>use-of-M-cps</code>
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define use<span class="sy0">-</span>of<span class="sy0">-</span>M
+  <span class="br0">&#40;</span><span class="br0">&#40;</span>M <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>n<span class="br0">&#41;</span> <span class="br0">&#40;</span>add1 n<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> '<span class="br0">&#40;</span><span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+</div>
+
+<h3><a name="brainteaser" id="brainteaser">Brainteaser</a></h3>
+<div class="level3">
+
+<p>
+
+14. CPS the following program, and call it <code>strange-cps</code>:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define strange
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>x<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>g<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>x<span class="br0">&#41;</span> <span class="br0">&#40;</span>g g<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+     <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>g<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>x<span class="br0">&#41;</span> <span class="br0">&#40;</span>g g<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+15. Consider the following use of <code>strange</code>, called <code>use-of-strange</code>. Using your CPSed <code>strange</code>, re-write <code>use-of-strange</code> to call <code>strange-cps</code>, and make all the appropriate changes. Name it <code>use-of-strange-cps</code>.
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define use<span class="sy0">-</span>of<span class="sy0">-</span>strange
+  <span class="br0">&#40;</span><span class="kw1">let</span> <span class="br0">&#40;</span><span class="br0">&#91;</span>strange<span class="sy0">^</span> <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span>strange <span class="nu0">5</span><span class="br0">&#41;</span> <span class="nu0">6</span><span class="br0">&#41;</span> <span class="nu0">7</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">&#40;</span>strange<span class="sy0">^</span> <span class="nu0">8</span><span class="br0">&#41;</span> <span class="nu0">9</span><span class="br0">&#41;</span> <span class="nu0">10</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+16. CPS the following program, and call it <code>why-cps</code>:
+</p>
+<pre class="code lisp"><span class="br0">&#40;</span>define why
+  <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>f<span class="br0">&#41;</span>
+    <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>g<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span>f <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>g g<span class="br0">&#41;</span> x<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+     <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>g<span class="br0">&#41;</span>
+       <span class="br0">&#40;</span>f <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>x<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>g g<span class="br0">&#41;</span> x<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span></pre>
+<p>
+To get you started, you may find it useful to see the following-call to <code>why</code>.
+</p>
+<pre class="code lisp"><span class="sy0">&gt;</span> <span class="br0">&#40;</span>define almost<span class="sy0">-</span><span class="kw1">length</span>
+    <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>f<span class="br0">&#41;</span>
+      <span class="br0">&#40;</span><span class="kw1">lambda</span> <span class="br0">&#40;</span>ls<span class="br0">&#41;</span>
+        <span class="br0">&#40;</span><span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">null</span>? ls<span class="br0">&#41;</span>
+            0
+            <span class="br0">&#40;</span>add1 <span class="br0">&#40;</span>f <span class="br0">&#40;</span><span class="kw1">cdr</span> ls<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="sy0">&gt;</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>why almost<span class="sy0">-</span><span class="kw1">length</span><span class="br0">&#41;</span> '<span class="br0">&#40;</span>a b c d e<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="nu0">5</span></pre>
+</div>
+
+<h3><a name="just-dessert" id="just-dessert">Just Dessert</a></h3>
+<div class="level3">
+
+<p>
+
+17. CPS <code>why-cps</code>, and call it <code>why-cps-cps</code>.
+</p>
+
+</div>
+
+    <!-- ......... wikipage stop  ......... -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+ 
+  <!--  footer -->  
+  <div class="stylefoot">
+
+        <div class="meta">
+      <div class="doc">
+		<p>assignment-6.txt &middot; Last modified: 2015/10/25 17:41 by jhemann</p>
+      </div>
+   </div>
+
+    <div>
+       <!--  breadcrumbs and search -->
+	  	
+	  
+
+       
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</div>
+
+<div class="no"><img src="/~c311/lib/exe/indexer.php?id=assignment-6&amp;1452708565" width="1" height="1" alt=""  /></div>
+</body>
+</html>
