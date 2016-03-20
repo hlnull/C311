@@ -1,4 +1,4 @@
-dis#lang scheme
+#lang scheme
 
 (require "parenthec.rkt")
 
