@@ -1,6 +1,3 @@
-#lang scheme
-
-
 ; Identity Monad
 (define return-id
   (lambda (a) a))
