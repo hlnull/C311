@@ -231,5 +231,5 @@
          (remberevensXcountevens (cdr l)))])))
 
 
-; e must somehow seed the state, and so we start it with a 0
+; we must somehow seed the state, and so we start it with a 0
 ((remberevensXcountevens `(1 2 3 4 5 6 7 8 9 10)) 0)
